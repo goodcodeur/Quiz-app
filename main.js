@@ -109,6 +109,10 @@ function animateEmojis() {
               emoji.className = "emoji"
               emoji.textContent = item;
               document.body.appendChild(emoji);
+
+              setTimeout(() => {
+                     emoji.remove()
+              }, 5000)
        }
 
        setInterval(randomEmote, 300)
