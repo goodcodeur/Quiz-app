@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+}
+
+body{
+       min-height: 100vh;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-family: "poppins", sans-serif;
+       background-color: #BCE4DC77;
+       overflow: hidden;
+}
+
+.container{
+       position: absolute;
+       min-width: 550px;
+       background-color: #fff;
+       box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .3);
+       border-radius: 1rem;
+       padding: 3rem 2rem;
+       z-index: 2;
+}
+
+.block-question.hide{
+       display: none;
+}
+
+.container h1{
+       font-size: 1.4rem;
+       margin-bottom: 2rem;
+       text-align: center;
+}
+
+.choice-list{
+       list-style: none;
+       margin-bottom: 3rem;
+}
+.choice-list li{
+       margin-bottom: .5rem;
+}
+
+.choice-list input[type=radio]{
+       margin-right: .5rem;
+       cursor: pointer;
+}
+
+.choice-list input[type=radio]:hover{
+       border: 3px solid #54C4B4;
+}
+
+.next-btn{
+       background-color: #54C4B4;
+       color: #fff;
+       text-align: center;
+       padding: 1rem;
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       border-bottom-left-radius: 1rem;
+       border-bottom-right-radius: 1rem;
+       transition: .3s;
+}
+
+.next-btn:hover{
+       background-color: #34747C;
+}
+
+.block-result{
+       display: none;
+       padding-bottom: 2rem;
+       text-align: center;
+       font-weight: 600;
+}
+
+.block-result.show{
+       display: block;
+}
+
+.emoji{
+       position: absolute;
+       top: -2rem;
+       transform: translateY(0);
+       animation: fall 2s linear;
+}
+
+@keyframes fall{
+       to{
+              transform: translateY(105vh);
+       }
+}
