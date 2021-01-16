@@ -22,7 +22,7 @@ body{
        background-color: #fff;
        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .3);
        border-radius: 1rem;
-       padding: 3rem 2rem;
+       padding: 3rem 5rem;
        z-index: 2;
 }
 
@@ -32,13 +32,13 @@ body{
 
 .container h1{
        font-size: 1.4rem;
-       margin-bottom: 2rem;
+       margin-bottom: 2.5rem;
        text-align: center;
 }
 
 .choice-list{
        list-style: none;
-       margin-bottom: 3rem;
+       margin-bottom: 4rem;
 }
 .choice-list li{
        margin-bottom: .5rem;
